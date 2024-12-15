@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+/// Classe qui donne toutes les caractéristiques d'un objet Movie
+/// Cet objet décrit ce qu'est un film ainsi que ces catégories 
+/// et ses liens.
+
 class Movie {
   final int id;
   final int added;
@@ -33,12 +37,18 @@ class Movie {
   }) : isFavorite = ValueNotifier<bool>(isFavorite);
 }
 
+/// Classe qui donne toutes les caractéristiques d'un objet MovieGenre
+/// Cet objet décrit ce qu'est un genre de film (Exemple : id = 28, title = Action)
+
 class MovieGenre {
   final String title;
   final int id;
 
   MovieGenre({required this.title, required this.id});
 }
+
+/// Classe qui donne toutes les caractéristiques d'un objet MovieLink
+/// Cet objet décrit ce qu'est un lien de streaming pour un film.
 
 class MovieLink {
   final String url;

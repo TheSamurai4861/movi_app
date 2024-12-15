@@ -1,0 +1,37 @@
+name: movi_mobile
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  dartz: ^0.10.1
+  dio: ^5.7.0
+  equatable: ^2.0.7
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_dotenv: ^5.2.1
+  get_it: ^8.0.2
+  go_router: ^14.6.2
+  http: ^1.2.2
+  media_kit: ^1.1.11
+  media_kit_libs_video: ^1.0.5
+  media_kit_video: ^1.2.5
+  path: ^1.9.0
+  refreshable_widget: ^0.1.3+5
+  sqflite: ^2.3.3+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - 'assets/icons/'
+    - 'assets/databases/'
